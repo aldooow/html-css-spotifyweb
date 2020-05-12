@@ -1,0 +1,64 @@
+/* General rulez */
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+a {
+  color: #565960;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffff;
+  text-decoration: none;
+}
+/* img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+} */
+/* end General rulez */
+
+.wrapper {
+  background: lightgreen;
+  height: calc(100vh - 100px);
+}
+nav {
+  background: #000000;
+  float: left;
+  width: 230px;
+  height: 100%;
+}
+main {
+  background: yellow;
+  float: left;
+  width: calc(100vw - 230px);
+  height: 100%;
+}
+main > .upgrade {
+  background: rgba(0,0,0,0.5);
+  position: fixed; /* aggiunto "position:fixed" , perche il contenuto degli album si vedeva attravero lo sfondo trasparente */
+  top: 0;
+  width: 100%;
+  height: 90px;
+}
+main > .content {
+  background: #141922;
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+.menu-horizontal {
+  text-align: center;
+  color: #565960;
+  margin-top: 90px;
+}
+.menu-horizontal ul li {
+  padding: 20px 10px;
+  display: inline-block;
+}
+
+footer {
+  background: #282828;
+  height: 100px;
+}
