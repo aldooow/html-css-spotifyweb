@@ -17,72 +17,117 @@
 
       <!-- Navigation bar -->
       <nav>
-        <div class="logo">
-          <img src="img/logo.svg" alt="logo-spotify">
-        </div>
-        <div class="box-nav home">
-          <img src="img/home.svg" alt="home">
-          <a href="#">Home</a>
-        </div>
-        <div class="box-nav">
-          <img src="img/search.svg" alt="cerca">
-          <a href="#">Cerca</a>
-        </div>
-        <div class="box-nav">
-          <img src="img/libreria.svg" alt="librery">
-          <a href="#">La tua libreria</a>
-        </div>
 
-        <div class="box-nav playlist">
-          <h5>PLAYLIST</h5>
-          <a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a>
-          <div class="nome-playlist">
+        <!-- Navigation bar - top -->
+        <div class="nav-top">
+
+          <!-- logo -->
+          <div class="logo">
+            <img class="logo-large" src="img/logo.svg" alt="logo-spotify">
+            <img class="logo-small" src="img/logo-small.svg" alt="logo-spotify">
+          </div>
+          <!-- end logo -->
+
+          <!-- Menu Vertical -->
+          <div class="menu-vertical">
             <ul>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
+              <!-- home -->
+              <li class="box-nav active">
+                <a href="#">
+                  <img src="img/home.svg" alt="home">
+                  <p class="display-none">Home</p>
+                </a>
+              </li>
+              <!-- end home -->
+
+              <!-- search -->
+              <li class="box-nav">
+                <a href="#">
+                  <img src="img/search.svg" alt="cerca">
+                  <p class="display-none">Cerca</p>
+                </a>
+              </li>
+              <!-- end search -->
+
+              <!-- library -->
+              <li class="box-nav">
+                <a href="#">
+                  <img src="img/libreria.svg" alt="library">
+                  <p class="display-none">La tua libreria</p>
+                </a>
+              </li>
+              <!-- end library -->
+
             </ul>
           </div>
+          <!-- Menu Vertical -->
+
+          <!-- Playlist -->
+          <div class="box-nav playlist display-none">
+            <h5>PLAYLIST</h5>
+            <a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a>
+            <div class="nome-playlist">
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end Playlist -->
+
         </div>
+        <!-- end Navigation bar - top -->
 
-        <div class="box-nav installer">
-          <a href="#"><i class="far fa-arrow-alt-circle-down"></i> Installa app</a>
+        <!-- Navigation bar - bottom -->
+        <div class="nav-bottom">
+
+          <div class="installer">
+            <a href="#">
+              <i class="far fa-arrow-alt-circle-down"></i>
+              <p class="display-none">Installa app</p>
+            </a>
+          </div>
+
+          <div class="box-nav user">
+            <div class="image-profile">
+              <img src="img/profile.svg" alt="profile">
+            </div>
+            <a href="#">
+              <p class="display-none"><b>John Doe</b></p>
+            </a>
+
+          </div>
 
         </div>
-
+        <!-- end Navigation bar - bottom -->
 
       </nav>
       <!-- end Navigation bar -->
-      <main>
-        <div class="upgrade">
 
+
+      <main>
+
+        <!-- Block Upgrade -->
+        <div id="upgrade">
+          <div class="button-upgrade">
+            <a href="#"><p>EFFETUA L'UPGRADE</p></a>
+          </div>
         </div>
+        <!-- end Block Upgrade -->
+
+
         <div class="content">
+
+          <!-- Menu horizontal -->
           <div class="menu-horizontal">
             <ul>
               <li><a href="#">IN EVIDENZA</a></li>
@@ -92,51 +137,205 @@
               <li><a href="#">NUOVE USCITE</a></li>
               <li><a href="#">SCOPRI</a></li>
             </ul>
-
           </div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <!-- end Menu horizontal -->
 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          loreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          lore
 
-          lore
-          lore
-          lore
+          <section class="wrapper-content">
+            <h2>Recently played</h2>
+
+            <div class="box-cover">
+
+              <!-- cover-1 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/metal_lifting.jpg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Heavy Metal</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+              <!-- end cover-1 -->
+
+              <!-- cover-2 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/stranger.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                  <p>Kyle Dixon & Michael Stein</p>
+                </div>
+              </div>
+              <!-- end cover-2 -->
+
+              <!-- cover-3 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/aquietplace.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>A quiet place</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+              <!-- end cover-3 -->
+
+              <!-- cover-4 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/split.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Split</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+              <!-- end cover-4 -->
+
+              <!-- cover-5 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/cure.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>A cure for wellness</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+              <!-- end cover-5 -->
+
+              <!-- cover-6 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/sinister.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Sinister</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+              <!-- end cover-6 -->
+
+            </div>
+
+          </section>
+
+          <section class="wrapper-content">
+
+            <h3>Creato per John Doe</h3>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="box-cover ">
+
+              <!-- cover-Release Radar -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/radar.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Release Radar</h4>
+                </div>
+              </div>
+              <!-- end cover-Release Radar -->
+
+              <!-- cover-Daily Mix -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img src="img/mixdaily.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Daily Mix 1</h4>
+                </div>
+              </div>
+              <!-- end cover-Daily Mix -->
+
+            </div>
+
+          </section>
+
+          <section class="wrapper-content">
+            <h3>Artisti più popolari</h3>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+            <div class="box-cover">
+
+              <!-- cover-Popular 1 -->
+              <div class="cover cover-circle">
+                <div class="cover-img">
+                  <img class="cover-circle" src="img/youg.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter cover-circle">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Lana del Rey</h4>
+                </div>
+              </div>
+              <!-- end cover-Popular 1 -->
+
+              <!-- cover-Popular 2 -->
+              <div class="cover">
+                <div class="cover-img">
+                  <img class="cover-circle" src="img/einaudi.jpeg" alt="cover">
+                  <a href="#">
+                    <div class="cover-filter cover-circle">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="cover-tittle">
+                  <h4>Ludovico Einaudi</h4>
+                </div>
+              </div>
+              <!-- end cover-Popular 2 -->
+
+            </div>
+
+          </section>
+
 
         </div>
 
@@ -144,6 +343,8 @@
     </div>
 
     <footer>
+
+
     </footer>
 
   </body>

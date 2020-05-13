@@ -8,90 +8,268 @@ a {
   color: #606060;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:active,
+a:focus {
   color: #ffff;
   text-decoration: none;
 }
+ul {
+  list-style-type: none; /* nessun elemento come marcatore */
+  padding-left: 0;       /* padding nullo */
+  margin-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
 h5 {
   color: #ffff;
 }
-/* img {
+img {
   width: 100%;
 }
-li {
-  list-style-type: none;
-} */
 /* end General rulez */
 
+/* components */
+
+/* end components */
+
+
 .wrapper {
+  display: flex;
   background: lightgreen;
   height: calc(100vh - 100px);
 }
-.wrapper img {
+.wrapper nav img {
   width: 25px;
   vertical-align: middle;
 }
+
+
+
+/* NAVIGATION BAR */
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #000000;
-  float: left;
   width: 230px;
   height: 100%;
+  overflow-y: hidden;
 }
-.logo {
-  padding: 20px;
-}
-.logo img {
-  width: 70%;
+nav p {
+  display: inline-block;
 }
 .box-nav {
   padding: 5px 20px;
   border-left: 3px solid #000000;
 }
-.box-nav.home {
-  border-left: 3px solid #adff30;
+.box-nav.active {
+  border-left: 3px solid #adff30; /* il bordo sinistro diventa verde quando viene selezionato */
 }
-.playlist {
-
+nav .nav-top .logo {
+  padding: 20px;
 }
-.nome-playlist {
-  max-height: 100px;
+nav .nav-top .logo > .logo-small {
+  display: none;
+}
+nav .nav-top .logo > .logo-large {
+  width: 70%;
+}
+nav .nav-top .playlist .fas {
+  color: #999999;
+  font-size: 40px;
+  vertical-align: middle;
+}
+nav .nav-top .playlist .nome-playlist {
+  max-height: 150px;
   overflow-y: auto;
-
+}
+nav .nav-top .playlist .nome-playlist li {
+  padding: 10px 0;
+}
+nav .installer {
+  border-bottom: 1px solid #999999;
+  margin: 5px 20px;
+}
+nav .nav-bottom .user .image-profile {
+  background: #7f7f7f;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+nav .nav-bottom .user .image-profile img {
+  width: 100%;
+  height: 80%;
+}
+nav .nav-bottom .user a {
+  color: #ffff;
 }
 
-.installer {
-
+/***** media query Navigation-bar  *****/
+@media screen and (max-width: 768px) {
+  .display-none {
+    display: none;
+  }
+  nav {
+    width: 50px;
+  }
+  nav .box-nav {
+    padding: 5px 10px;
+  }
+  nav .nav-top .logo > .logo-large {
+    display: none;
+  }
+  nav .nav-top .logo > .logo-small {
+    display: inline;
+    margin-left: -5px;
+  }
+  nav .nav-bottom .installer {
+    border: none;
+  }
+  nav .nav-bottom .user .image-profile {
+   margin-left: -5px;
+  }
 }
+/***** media query Navigation-bar  *****/
 
+/* end NAVIGATION BAR */
+
+
+
+
+/* MAIN BAR */
 main {
   background: yellow;
-  float: left;
-  width: calc(100vw - 230px);
+  width: calc(100% - 230px);
   height: 100%;
 }
-main > .upgrade {
+
+/* Blocco Upgrade */
+main > #upgrade {
   background: rgba(0,0,0,0.5);
   position: fixed; /* aggiunto "position:fixed" , perche il contenuto degli album si vedeva attravero lo sfondo trasparente */
   top: 0;
-  width: 100%;
+  width: calc(100% - 230px);
   height: 90px;
+  text-align: right;
+  z-index: 9;
+
 }
+main #upgrade .button-upgrade {
+  padding: 15px 40px 5px 40px;
+  border-radius: 50px;
+  color: #ffff;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 20px;
+}
+main #upgrade .button-upgrade a {
+  color: #ffff;
+}
+main #upgrade .button-upgrade:hover {
+  transform: scale(1.1);
+}
+
+/* end Blocco Upgrade */
+
 main > .content {
   background: #141922;
   width: 100%;
   height: calc(100vh - 100px);
   overflow-y: auto;
 }
-.menu-horizontal {
+main .content .menu-horizontal {
   text-align: center;
   margin-top: 90px;
 }
-.menu-horizontal ul li {
+main .content .menu-horizontal ul li {
   padding: 20px 10px;
   display: inline-block;
 }
+.wrapper-content {
+ margin: 10px;
+}
+.box-cover {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cover {
+  text-align: center;
+  width: calc(100% / 6 - 20px);
+  margin: 10px;
+  height: 100%;
+}
+.cover-circle {
+  border-radius: 50%;
+}
+.cover-img {
+  position: relative;
+}
+.cover-img:hover .cover-filter {
+  display: inline-block;
+}
+.cover-img .cover-filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  font-size: 60px;
+  color: white;
+  display: none;
+}
+.cover-img .cover-filter,
+.cover-filter .far {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cover-tittle {
+  display: inline-block;
+}
 
+/***** media query Main *****/
+@media screen and (max-width: 768px) {
+  main {
+    width: calc(100vw - 50px);
+  }
+  main #upgrade {
+    width: calc(100vw - 50px);
+  }
+  .cover {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .cover {
+    width: calc(100% / 4 - 20px);
+  }
+}
+/***** end media query Main  *****/
+/* end MAIN BAR */
+
+
+/* Footer */
 footer {
   background: #282828;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* end Footer */
+@media screen and (max-width: 768px) {
+  main {
+    width: calc(100vw - 50px);
+  }
+  main .upgrade,
+  main .content {
+    width: calc(100vw - 50px);
+  }
 }
