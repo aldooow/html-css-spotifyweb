@@ -109,20 +109,18 @@ nav .installer {
   border-bottom: 1px solid #999999;
   margin: 5px 20px;
 }
+
 nav .nav-bottom .user .image-profile {
-  background: #7f7f7f;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
   display: inline-block;
-  vertical-align: middle;
 }
 nav .nav-bottom .user .image-profile img {
-  width: 100%;
-  height: 80%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
 nav .nav-bottom .user a {
   color: #ffff;
+
 }
 
 /***** media query Navigation-bar  *****/
