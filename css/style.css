@@ -99,7 +99,7 @@ nav .nav-top .playlist .add-more-img .fas {
   color: #000000;
 }
 nav .nav-top .playlist .nome-playlist {
-  max-height: 150px;
+  height: 250px;
   overflow-y: auto;
 }
 nav .nav-top .playlist .nome-playlist li {
@@ -207,7 +207,7 @@ main .content .menu-horizontal ul li {
 .active-b {
   width: 30px;
   height: 3px;
-  background: #adff30;
+  background-color: #adff30;
   display: block;
   text-align: center;
   margin: auto;
@@ -280,18 +280,110 @@ footer {
   background: #282828;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
+/* components - bar volume/play */
+.bar-total,
+.bar-partial {
+  border-radius: 10px;
+}
+.bar-total {
+  margin: 0 15px;
+  background-color: #535353;
+  height: 5px;
+}
+.bar-partial {
+
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #bababa;
+  height: 100%;
+  width: 25%;
+}
+.pointer {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.bar-partial:hover {
+  background: #adff30;
+
+}
+.pointer:hover {
+  transform: scale(3);
+  background-color: #ffff;
+}
+/* end components - bar volume/play */
+
+footer .player-music {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer a {
+  color: #ffff;
+}
+footer .player-music i {
+  padding-right: 10px;
+}
+footer .player-music .play-now {
+  width: 200px;
+  display: flex;
+}
+footer .player-music .play-now img {
+  width: 50px;
+}
+footer .player-music .play-now .music-track {
+  margin-left: 5px;
+  line-height: 0;
+}
+
+/* ]]]]]]]] */
+footer .player-keys {
+  text-align: center;
+  width: 45%;
+}
+footer .player-keys .keys-spotify li {
+  font-size: 20px;
+  color: #ffff;
+  padding: 0 10px;
+  display: inline-block;
+}
+footer .player-keys .keys-spotify .fas:hover {
+  transform: scale(1.2)
+
+}
+footer .player-keys .duration-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .player-keys .duration-music .bar-total.time-bar {
+  width: 400px;
+}
+
+/* ]]]]]]]] *//* ]]]]]]]] */
+
+footer .player-options {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .player-options i {
+  padding-left: 10px;
+}
+footer .player-options .bar-total.volume-bar {
+  width: 100px;
+}
+
+
+
 
 
 
 /* end Footer */
-@media screen and (max-width: 768px) {
-  main {
-    width: calc(100vw - 50px);
-  }
-  main .upgrade,
-  main .content {
-    width: calc(100vw - 50px);
-  }
-}
