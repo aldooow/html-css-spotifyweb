@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   color: #606060;
+  min-width: 500px;
 }
 a {
   color: #606060;
@@ -255,10 +256,10 @@ main .content .menu-horizontal ul li {
 /***** media query Main *****/
 @media screen and (max-width: 768px) {
   main {
-    width: calc(100vw - 50px);
+    width: calc(100% - 50px);
   }
   main #upgrade {
-    width: calc(100vw - 50px);
+    width: calc(100% - 50px);
   }
   .cover {
     width: calc(100% / 2 - 20px);
@@ -311,7 +312,6 @@ footer {
   background: #ffff;
   transform: scale(3);
 }
-
 /* end components - bar volume/play */
 
 /* Footer Player-music */
