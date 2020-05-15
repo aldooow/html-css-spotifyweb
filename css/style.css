@@ -35,7 +35,6 @@ img {
 
 /* end components */
 
-
 .wrapper {
   display: flex;
   background: lightgreen;
@@ -45,8 +44,6 @@ img {
   width: 25px;
   vertical-align: middle;
 }
-
-
 
 /* NAVIGATION BAR */
 nav {
@@ -87,9 +84,11 @@ nav .nav-top .playlist .add-more-tittle {
   font-size: 15px;
 }
 nav .nav-top .playlist .add-more-img {
-  padding: 8px;
+  line-height: 2.2;
+  text-align: center;
+  height: 30px;
+  width: 30px;
   background: #999999;
-  border-radius: 2%;
 }
 nav .nav-top .playlist .add-more-img:hover {
   background: #ffff;
@@ -99,9 +98,10 @@ nav .nav-top .playlist .add-more-img .fas {
   color: #000000;
 }
 nav .nav-top .playlist .nome-playlist {
-  height: 250px;
+  height: 150px;
   overflow-y: auto;
 }
+
 nav .nav-top .playlist .nome-playlist li {
   padding: 10px 0;
 }
@@ -151,8 +151,6 @@ nav .nav-bottom .user a {
 /***** media query Navigation-bar  *****/
 
 /* end NAVIGATION BAR */
-
-
 
 
 /* MAIN BAR */
@@ -294,7 +292,6 @@ footer {
   height: 5px;
 }
 .bar-partial {
-
   display: block;
   display: flex;
   justify-content: flex-end;
@@ -310,10 +307,11 @@ footer {
 .bar-partial:hover {
   background: #adff30;
 }
-.pointer:hover {
+.bar-partial:hover .pointer {
+  background: #ffff;
   transform: scale(3);
-  background-color: #ffff;
 }
+
 /* end components - bar volume/play */
 
 /* Footer Player-music */
@@ -357,14 +355,12 @@ footer .player-keys .keys-spotify li {
 }
 footer .player-keys .keys-spotify .fas:hover {
   transform: scale(1.2)
-
 }
 footer .player-keys .duration-music {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .player-keys .duration-music .bar-total.time-bar {
   width: 400px;
 }
